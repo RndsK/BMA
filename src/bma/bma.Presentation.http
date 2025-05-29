@@ -1,0 +1,36 @@
+﻿@bma.Presentation_HostAddress = https://localhost:7256
+
+POST {{bma.Presentation_HostAddress}}/api/join/{1}
+
+###
+
+POST  {{bma.Presentation_HostAddress}}/api/user/login
+
+###
+GET {{bma.Presentation_HostAddress}}/api/overtime
+
+###
+
+POST {{bma.Presentation_HostAddress}}/api/overtime
+Content-Type: application/json
+
+{
+  //CreateOvertimeRequestDto
+}
+
+###
+
+@companyId=0
+POST {{bma.Presentation_HostAddress}}/api/company/join/{{companyId}}
+
+###
+
+@countryCode=string
+GET {{bma.Presentation_HostAddress}}/api/holidays/bank-holidays/{{countryCode}}
+
+###
+
+@searchQuery=string
+GET {{bma.Presentation_HostAddress}}/api/requests/company/{companyId}?searchQuery={{searchQuery}}
+
+###

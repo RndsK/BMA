@@ -1,0 +1,8 @@
+﻿{
+    "$schema": "https://xunit.net/schema/current/xunit.runner.json",
+    "shadowCopy": false,
+    "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Testing"
+    }
+
+}

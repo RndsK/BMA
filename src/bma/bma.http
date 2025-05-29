@@ -1,0 +1,6 @@
+@bma_HostAddress = http://localhost:5140
+
+GET {{bma_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
